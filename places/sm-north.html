@@ -34,6 +34,55 @@
             <td>Weekdays, 1:00 PM - 4:00 PM</td>
         </tr>
     </table>
+
+    <hr>
+
+    <h2>Suggest a New Place</h2>
+    <form action="#" method="post">
+        <p>
+            <label for="place-name">Place Name:</label><br>
+            <input type="text" id="place-name" name="place-name" required>
+        </p>
+
+        <fieldset>
+            <legend>Category</legend>
+            <p>
+                <input type="radio" id="cat-mall" name="category" value="mall-tambayan" checked>
+                <label for="cat-mall">Mall Tambayan</label>
+            </p>
+            <p>
+                <input type="radio" id="cat-food" name="category" value="food-spot">
+                <label for="cat-food">Food Spot / Kainan</label>
+            </p>
+            <p>
+                <input type="radio" id="cat-study" name="category" value="study-spot">
+                <label for="cat-study">Study Spot / Cafe</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's good about it?</legend>
+            <p>
+                <input type="checkbox" id="feature-ac" name="good_features" value="air-conditioned">
+                <label for="feature-ac">Air-conditioned / Malamig</label>
+            </p>
+            <p>
+                <input type="checkbox" id="feature-affordable" name="good_features" value="affordable">
+                <label for="feature-affordable">Affordable / Mura</label>
+            </p>
+            <p>
+                <input type="checkbox" id="feature-spacious" name="good_features" value="spacious">
+                <label for="feature-spacious">Spacious / Relaxed Vibe</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <label for="contact-email">Contact Email:</label><br>
+            <input type="email" id="contact-email" name="contact-email" required>
+        </p>
+
+        <button type="submit">Send suggestion</button>
+    </form>
 </main>
 
 <footer>
