@@ -1,0 +1,99 @@
+/* 1. Variables */
+:root {
+    --brand-color: #0664e7;       /* QC Tambayan Teal Accent */
+    --dark-ink: #1f2937;          /* Primary Body Text */
+    --muted-grey: #6b7280;        /* Subtle Text & Borders */
+    --light-bg: #f8fafc;          /* Off-white Background */
+}
+
+/* 2. Base styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6; /* Meets line-height at least 1.5 */
+    color: var(--dark-ink);
+    background-color: var(--light-bg);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--brand-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 3. Layout regions */
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--muted-grey);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--brand-color);
+    margin: 0 0 0.5rem 0;
+}
+
+header p {
+    color: var(--muted-grey);
+    margin: 0 0 1rem 0;
+}
+
+/* Horizontal Nav Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0.75rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+footer {
+    border-top: 1px solid var(--muted-grey);
+    text-align: center;
+    padding: 1rem;
+    color: var(--muted-grey);
+    margin-top: 2rem;
+}
+
+/* 4. Components (Place Entry Cards) */
+article,
+.place-card {
+    background-color: #ffffff;
+    border: 1px solid var(--muted-grey);
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+article h2,
+article h3,
+.place-card h2,
+.place-card h3 {
+    margin-top: 0;
+    color: var(--brand-color);
+}
