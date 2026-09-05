@@ -81,19 +81,70 @@ footer {
 }
 
 /* 4. Components (Place Entry Cards) */
-article,
 .place-card {
     background-color: #ffffff;
-    border: 1px solid var(--muted-grey);
     border-radius: 8px;
-    padding: 1.25rem;
-    margin-bottom: 1.5rem;
+    padding: 1.25rem; /* At least 16px padding */
+    border-left: 5px solid var(--brand-color); /* Brand colored left border */
+    border-top: 1px solid var(--muted-grey);
+    border-right: 1px solid var(--muted-grey);
+    border-bottom: 1px solid var(--muted-grey);
+    margin-bottom: 1.5rem; /* Ensures cards don't touch each other */
 }
 
-article h2,
-article h3,
 .place-card h2,
 .place-card h3 {
+    font-size: 1.35rem; /* Distinct font size */
+    color: var(--brand-color); /* Distinct brand color */
     margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* 5. Form Styles */
+fieldset {
+    padding: 1rem;
+    border: 1px solid var(--muted-grey);
+    border-radius: 6px;
+    margin-bottom: 1.25rem;
+}
+
+legend {
     color: var(--brand-color);
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 0.6rem; /* Consistent padding on inputs and textarea */
+    border: 1px solid var(--muted-grey);
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+}
+
+/* Accessible visible focus state for keyboard users */
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid var(--brand-color);
+    outline-offset: 2px;
+}
+
+button[type="submit"] {
+    background-color: var(--brand-color);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none; /* No default border */
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.9;
 }
