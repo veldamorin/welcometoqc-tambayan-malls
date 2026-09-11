@@ -31,34 +31,33 @@ a:hover {
     text-decoration: underline;
 }
 
-/* 3. Layout regions */
+/* 3. Layout regions & Header Flexbox (Module 6.3) */
 header {
     background-color: #ffffff;
     border-bottom: 2px solid var(--muted-grey);
-    padding: 1.5rem;
-    text-align: center;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     color: var(--brand-color);
-    margin: 0 0 0.5rem 0;
+    margin: 0;
+    font-size: 1.5rem;
 }
 
-header p {
-    color: var(--muted-grey);
-    margin: 0 0 1rem 0;
-}
-
-/* Horizontal Nav Bar */
+/* Flexbox Navigation (Replaces inline-block) */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 20px; /* Spacing handled by gap instead of margins */
 }
 
 nav li {
-    display: inline-block;
-    margin: 0 0.75rem;
+    margin: 0;
 }
 
 nav a {
@@ -72,6 +71,27 @@ main {
     padding: 0 1rem;
 }
 
+/* Centered Banner Component (Horizontally and Vertically) */
+.hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px; /* Specific height required for vertical centering */
+    background-color: #f0f7ff;
+    border: 1px dashed var(--brand-color);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero-banner p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--brand-color);
+    margin: 0;
+}
+
 footer {
     border-top: 1px solid var(--muted-grey);
     text-align: center;
@@ -80,27 +100,34 @@ footer {
     margin-top: 2rem;
 }
 
-/* 4. Components (Place Entry Cards) */
+/* 4. Components (Place Entry Cards Grid - Module 6.4) */
+.places-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
 .place-card {
+    flex: 1 1 240px; /* Grow, shrink, base width before wrapping */
     background-color: #ffffff;
     border-radius: 8px;
-    padding: 1.25rem; /* At least 16px padding */
-    border-left: 5px solid var(--brand-color); /* Brand colored left border */
+    padding: 1.25rem;
+    border-left: 5px solid var(--brand-color);
     border-top: 1px solid var(--muted-grey);
     border-right: 1px solid var(--muted-grey);
     border-bottom: 1px solid var(--muted-grey);
-    margin-bottom: 1.5rem; /* Ensures cards don't touch each other */
+    margin-bottom: 0; /* Spacing handled by grid gap */
 }
 
 .place-card h2,
 .place-card h3 {
-    font-size: 1.35rem; /* Distinct font size */
-    color: var(--brand-color); /* Distinct brand color */
+    font-size: 1.35rem;
+    color: var(--brand-color);
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
-/* 5. Form Styles */
+/*  5. Form Styles */
 fieldset {
     padding: 1rem;
     border: 1px solid var(--muted-grey);
@@ -119,7 +146,7 @@ input[type="email"],
 input[type="number"],
 textarea {
     width: 100%;
-    padding: 0.6rem; /* Consistent padding on inputs and textarea */
+    padding: 0.6rem;
     border: 1px solid var(--muted-grey);
     border-radius: 4px;
     font-size: 1rem;
@@ -138,7 +165,7 @@ button[type="submit"] {
     background-color: var(--brand-color);
     color: #ffffff;
     padding: 0.75rem 1.5rem;
-    border: none; /* No default border */
+    border: none;
     border-radius: 4px;
     font-size: 1rem;
     font-weight: bold;
