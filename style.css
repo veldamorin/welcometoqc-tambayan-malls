@@ -101,14 +101,14 @@ footer {
 }
 
 /* 4. Components (Place Entry Cards Grid - Module 6.4) */
-.places-grid {
+.place-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
 
 .place-card {
-    flex: 1 1 240px; /* Grow, shrink, base width before wrapping */
+    flex: 1 1 240px; /* grow, shrink, base width before wrapping */
     background-color: #ffffff;
     border-radius: 8px;
     padding: 1.25rem;
