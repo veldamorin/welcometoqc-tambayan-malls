@@ -1,60 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QC Malls Tambayan Guide</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<header>
-    <h1>welcome2qc tambayan mall</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Outer page wrapper for Grid Layout -->
+    <div class="page">
 
-<main>
-    <div class="hero-banner">
-        <p>Welcome to QC Malls tambayan kung saan chill lang, mura ang kainan at walang nagmamadali</p>
+        <!-- Grid Area: masthead -->
+        <header>
+            <h1>QC Tambayan</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#places">Tambayan Spots</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Grid Area: side -->
+        <aside>
+            <h3>How I Choose These Places</h3>
+            <p>Every spot listed here is budget-friendly, accessible via commute, and offers a relaxed vibe to unwind or hang out after class.</p>
+
+            <h3>Quick Visitor Tips</h3>
+            <ul>
+                <li>Visit during off-peak hours (2 PM – 4 PM) for fewer crowds.</li>
+                <li>Check outdoor rooftop areas for fresh air and quieter seats.</li>
+            </ul>
+        </aside>
+
+        <!-- Grid Area: main -->
+        <main>
+            <div class="hero-banner">
+                <p>Welcome to QC Malls tambayan kung saan chill lang, mura ang kainan at walang nagmamadali</p>
+            </div>
+
+            <h2>Aking tambayan</h2>
+
+            <div class="place-grid">
+                <article class="place-card">
+                    <h3>SM City North EDSA</h3>
+                    <p>North Avenue, Quezon City</p>
+                    <p>Solid na tambayan kapag trip mo mag-food trip o magpalipas ng oras. Sobrang daming budget options at space para mag-lakad-lakad.</p>
+                    <img src="sm-north.jpg" alt="SM City North EDSA mall exterior" width="160">
+                    <a href="places/sm-north.html">Read more</a>
+                </article>
+
+                <article class="place-card">
+                    <h3>TriNoma Mall</h3>
+                    <p>EDSA corner Quezon Avenue, Quezon City</p>
+                    <p>Chill outdoor rooftop garden vibe na swak pang-usap o mag-unwind pagkatapos ng klase.</p>
+                    <img src="trinoma.jpg" alt="TriNoma Mall rooftop garden" width="160">
+                    <a href="places/trinoma.html">Read more</a>
+                </article>
+
+                <article class="place-card">
+                    <h3>Fisher Mall</h3>
+                    <p>Quezon Avenue, Quezon City</p>
+                    <p>Kung ayaw mo sa sobrang siksikan, may magandang arcade, kainan, at relaxed lang ang mood lagi.</p>
+                    <img src="fishermall.jpg" alt="Fisher Mall facade" width="160">
+                    <a href="places/fishermall.html">Read more</a>
+                </article>
+
+                <article class="place-card">
+                    <h3>Cubao Malls (Gateway & Farmers)</h3>
+                    <p>Araneta City, Cubao, Quezon City</p>
+                    <p>Gitna ng lahat, kumbaga center of the universe. Solid sa Gateway kung gusto mo ng malamig at maayos na spot sa QC.</p>
+                    <img src="cubao-malls.jpg" alt="Gateway Mall indoor garden" width="160">
+                    <a href="places/cubao-malls.html">Read more</a>
+                </article>
+            </div>
+        </main>
+
+        <!-- Grid Area: foot -->
+        <footer>
+            <p>&copy; 2026 QC Tambayan Guide. All rights reserved.</p>
+        </footer>
+
     </div>
 
-    <h2>Aking tambayan</h2>
-
-    <div class="place-grid">
-        <article class="place-card">
-            <h3>SM City North EDSA</h3>
-            <p>North Avenue, Quezon City</p>
-            <p>Solid na tambayan kapag trip mo mag-food trip o magpalipas ng oras. Sobrang daming budget options at space para mag-lakad-lakad.</p>
-            <img src="sm-north.jpg" alt="SM City North EDSA mall exterior and main entrance" width="160">
-            <a href="places/sm-north.html">Read more</a>
-        </article>
-
-        <article class="place-card">
-            <h3>TriNoma Mall</h3>
-            <p>EDSA corner Quezon Avenue, Quezon City</p>
-            <p>Chill outdoor rooftop garden vibe na swak pang-usap o mag-unwind pagkatapos ng klase, plus napaka-convenient sa biyahe dahil katabi mismo ang SM North.</p>
-            <img src="trinoma.jpg" alt="TriNoma Mall rooftop garden area" width="160">
-            <a href="places/trinoma.html">Read more</a>
-        </article>
-
-        <article class="place-card">
-            <h3>Fisher Mall</h3>
-            <p>Quezon Avenue, Quezon City</p>
-            <p>Kung ayaw mo sa sobrang siksikan, May magandang arcade, kainan, at relaxed lang ang mood lagi.</p>
-            <img src="fishermall.jpg" alt="Fisher Mall Quezon Avenue facade" width="160">
-            <a href="places/fishermall.html">Read more</a>
-        </article>
-
-        <article class="place-card">
-            <h3>Cubao Malls (Gateway & Farmers)</h3>
-            <p>Araneta City, Cubao, Quezon City</p>
-            <p>Gitna ng lahat, kumbaga ang center of the universe. Solid sa Gateway kung gusto mo ng malamig at maayos na spot sa QC.</p>
-            <img src="cubao-malls.jpg" alt="Gateway Mall indoor tropical garden in Cubao" width="160">
-            <a href="places/cubao-malls.html">Read more</a>
-        </article>
-    </div>
-</main>
-
-<footer>
-    <p>&copy; 2026 welcome2qc tambayan mall. All rights reserved.</p>
-</footer>
+</body>
+</html>
