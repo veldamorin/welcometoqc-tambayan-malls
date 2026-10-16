@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QC Malls Tambayan Guide</title>
+    <!-- Favicon fix to prevent 404 console errors -->
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,8 +27,15 @@
             <h3>How I Choose These Places</h3>
             <p>Every spot listed here is budget-friendly, accessible via commute, and offers a relaxed vibe.</p>
 
-            <!-- Dynamic JS calculation target -->
+            <h3>Quick Spot Status</h3>
             <p id="total-places" style="font-weight: bold; color: var(--brand-color);"></p>
+
+            <!-- Module 8.3: Dynamic Decision Display Outputs -->
+            <ul style="list-style: none; padding-left: 0; font-size: 0.95rem;">
+                <li id="rating-decision" style="margin-bottom: 0.4rem; font-weight: bold;"></li>
+                <li id="budget-decision" style="margin-bottom: 0.4rem; font-weight: bold;"></li>
+                <li id="distance-decision" style="margin-bottom: 0.4rem; font-weight: bold;"></li>
+            </ul>
         </aside>
 
         <main>
@@ -34,7 +43,7 @@
                 <p>Welcome to QC Malls tambayan kung saan chill lang, mura ang kainan at walang nagmamadali</p>
             </div>
 
-            <h2>Aking tambayan</h2>
+            <h2 id="places">Aking tambayan</h2>
 
             <div class="place-grid">
                 <article class="place-card">
