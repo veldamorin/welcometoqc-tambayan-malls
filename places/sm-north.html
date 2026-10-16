@@ -1,93 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM City North EDSA - QC Tambayan Guide</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+<body>
 
-<header>
-    <h1>welcome2qc tambayan mall</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <div class="page">
 
-<main>
-    <h1>SM City North EDSA</h1>
+        <header>
+            <h1 id="site-title">welcome2qc tambayan mall</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <img src="../sm-north.jpg" alt="SM City North EDSA main entrance facade" width="300">
+        <aside>
+            <h3>Quick Tip</h3>
+            <p>The Sky Garden is the best open-air section for walking and budget food options after afternoon classes.</p>
+        </aside>
 
-    <p>Isa ang SM City North EDSA sa mga pinaka-iconic at accessible na mall sa Quezon City. Solid na spot ito kapag naghahanap ka ng malawak na space para mag-lakad-lakad o magpalipas ng oras sa loob ng malamig at maayos na environment.</p>
+        <main>
+            <h1>SM City North EDSA</h1>
 
-    <p>Dahil sa sobrang laking space ng mall, napakaraming budget-friendly food options at indoor spots na hindi siksikan. Swak na swak ito sa mga gustong mag-unwind nang kumportable nang hindi nag-aalala sa init ng panahon o usok sa labas.</p>
+            <img src="../sm-north.jpg" alt="SM City North EDSA main entrance facade" width="300">
 
-    <h2>Place Details</h2>
-    <table>
-        <tr>
-            <th>Address</th>
-            <th>Opening Hours</th>
-            <th>Price Range</th>
-            <th>Best Time to Visit</th>
-        </tr>
-        <tr>
-            <td>North Avenue, Quezon City</td>
-            <td>10:00 AM - 10:00 PM</td>
-            <td>Budget-Friendly (₱100 - ₱300)</td>
-            <td>Weekdays, 1:00 PM - 4:00 PM</td>
-        </tr>
-    </table>
+            <p>Isa ang SM City North EDSA sa mga pinaka-iconic at accessible na mall sa Quezon City. Solid na spot ito kapag naghahanap ka ng makakainan o mapapasyalan.</p>
 
-    <hr>
+            <p>Dahil sa sobrang laking space ng mall, napakaraming budget-friendly food options at indoor spots na hindi siksikan. Swak na swak para sa madaling lakaran.</p>
 
-    <h2>Suggest a New Place</h2>
-    <form action="#" method="post">
-        <p>
-            <label for="place-name">Place Name:</label><br>
-            <input type="text" id="place-name" name="place-name" required>
-        </p>
+            <h2>Place Details</h2>
+            <table>
+                <tr>
+                    <th>Address</th>
+                    <th>Opening Hours</th>
+                    <th>Price Range</th>
+                    <th>Best Time to Visit</th>
+                </tr>
+                <tr>
+                    <td>North Avenue, Quezon City</td>
+                    <td>10:00 AM - 10:00 PM</td>
+                    <td>Budget-Friendly (₱100 - ₱300)</td>
+                    <td>Weekdays, 1:00 PM - 4:00 PM</td>
+                </tr>
+            </table>
 
-        <fieldset>
-            <legend>Category</legend>
-            <p>
-                <input type="radio" id="cat-mall" name="category" value="mall-tambayan" checked>
-                <label for="cat-mall">Mall Tambayan</label>
-            </p>
-            <p>
-                <input type="radio" id="cat-food" name="category" value="food-spot">
-                <label for="cat-food">Food Spot / Kainan</label>
-            </p>
-            <p>
-                <input type="radio" id="cat-study" name="category" value="study-spot">
-                <label for="cat-study">Study Spot / Cafe</label>
-            </p>
-        </fieldset>
+            <hr>
 
-        <fieldset>
-            <legend>What's good about it?</legend>
-            <p>
-                <input type="checkbox" id="feature-ac" name="good_features" value="air-conditioned">
-                <label for="feature-ac">Air-conditioned / Malamig</label>
-            </p>
-            <p>
-                <input type="checkbox" id="feature-affordable" name="good_features" value="affordable">
-                <label for="feature-affordable">Affordable / Mura</label>
-            </p>
-            <p>
-                <input type="checkbox" id="feature-spacious" name="good_features" value="spacious">
-                <label for="feature-spacious">Spacious / Relaxed Vibe</label>
-            </p>
-        </fieldset>
+            <h2>Suggest a New Place</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="place-name">Place Name:</label><br>
+                    <input type="text" id="place-name" name="place-name" required>
+                </p>
 
-        <p>
-            <label for="contact-email">Contact Email:</label><br>
-            <input type="email" id="contact-email" name="contact-email" required>
-        </p>
+                <fieldset>
+                    <legend>Category</legend>
+                    <p>
+                        <input type="radio" id="cat-mall" name="category" value="mall-tambayan" checked>
+                        <label for="cat-mall">Mall Tambayan</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="cat-food" name="category" value="food-spot">
+                        <label for="cat-food">Food Spot / Kainan</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="cat-study" name="category" value="study-spot">
+                        <label for="cat-study">Study Spot / Cafe</label>
+                    </p>
+                </fieldset>
 
-        <button type="submit">Send suggestion</button>
-    </form>
-</main>
+                <fieldset>
+                    <legend>What's good about it?</legend>
+                    <p>
+                        <input type="checkbox" id="feature-ac" name="good_features" value="air-conditioned">
+                        <label for="feature-ac">Air-conditioned / Malamig</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="feature-affordable" name="good_features" value="affordable">
+                        <label for="feature-affordable">Affordable / Mura</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="feature-spacious" name="good_features" value="spacious">
+                        <label for="feature-spacious">Spacious / Relaxed Vibe</label>
+                    </p>
+                </fieldset>
 
-<footer>
-    <p>&copy; 2026 welcome2qc tambayan mall. All rights reserved.</p>
-</footer>
+                <p>
+                    <label for="contact-email">Contact Email:</label><br>
+                    <input type="email" id="contact-email" name="contact-email" required>
+                </p>
+
+                <button type="submit">Send suggestion</button>
+            </form>
+        </main>
+
+        <footer>
+            <p id="copyright-notice">&copy; 2026 welcome2qc tambayan mall. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
